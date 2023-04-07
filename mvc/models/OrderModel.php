@@ -8,7 +8,7 @@ class OrderModel extends DB{
         return $data;
     }
 
-    public function getDoanhthu(){
+    public function getRevenue(){
         $sql = "SELECT SUM(total_money),MONTH(created_at) 
                 FROM orders 
                 WHERE status=3

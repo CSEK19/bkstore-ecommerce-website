@@ -7,9 +7,9 @@ class Admin extends Controller{
     }
 
     function SayHi() {
-        $doanhthu = $this->orderModel->getDoanhthu();
+        $revenue = $this->orderModel->getRevenue();
         $this->view("admin",[
-            "doanhthu"=>$doanhthu
+            "revenue"=>$revenue
         ]);
     }
 }

@@ -6,15 +6,15 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="d-block w-100"
-                        src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/airpods-pro-2022-sliding.png" alt="First slide">
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/s23-right-th3.jpg" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/sliding-flip-th11.jpg"
+                    <img class="d-block w-100" src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/690x300-sony.png"
                         alt="Second slide">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100"
-                        src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/apple-week-th11-sliding.png" alt="Third slide">
+                        src="https://cdn2.cellphones.com.vn/690x300,webp,q100/https://dashboard.cellphones.com.vn/storage/s22-ultra-sliding-hotsale.png" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -29,8 +29,8 @@
         <div class="imgSliderFlex">
             <img style="margin-bottom: 10px;" src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/RB_galaxy-A73.png"
                 alt="Third slide" class="imgSlider">
-            <img src="https://cdn2.cellphones.com.vn/690x300/https://dashboard.cellphones.com.vn/storage/iphone-14-right.png" alt="Third slide" class="imgSlider">
-            <img src="https://cdn.cellphones.com.vn/media/ltsoft/promotion/idepad_3.png" alt="Third slide" class="imgSlider">
+            <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/ipad-right-banner-th4.png" alt="Third slide" class="imgSlider">
+            <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/asus-vivolaptop-normal-right-003.jpg" alt="Third slide" class="imgSlider">
 
         </div>
     </div>

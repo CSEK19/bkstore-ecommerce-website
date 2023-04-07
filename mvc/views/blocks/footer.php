@@ -12,8 +12,10 @@
                     <!-- Links -->
                     <h5>About us</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
-                    <p  class="foot-desc mb-2">Database Management Systems</p>
-                    <p  class="foot-desc mb-2">Mini Project Group 8</p>
+
+                    <p class="foot-desc mb-0">CO3027</p>
+
+
 
                 </div>
                 <!-- Grid column -->
@@ -85,7 +87,7 @@
                         <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology     
                         </li>
                         <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>bkstore@co3021.hcmut.edu.vn
+                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>bkstore@co3027.hcmut.edu.vn
                         </li>
                         <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>
                     </ul>

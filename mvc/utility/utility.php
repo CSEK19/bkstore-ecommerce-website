@@ -50,15 +50,15 @@ function executeResultU($sql) {
 	$data = null;
 
 	//open connection
-    $conn = pg_connect("host=localhost port=5432 dbname=bkstore user=postgres password=local");
-	pg_set_client_encoding($conn, "utf8");
+	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+	mysqli_set_charset($conn, 'utf8');
 
 	//query
-	$resultset = pg_query($conn, $sql);
+	$resultset = mysqli_query($conn, $sql);
 	if($resultset){
-		$data = pg_fetch_array($resultset, NULL, PGSQL_BOTH);
+		$data = mysqli_fetch_array($resultset, 1);
 		//close connection
-		pg_close($conn);
+		mysqli_close($conn);
 	}
 	return $data;
 }

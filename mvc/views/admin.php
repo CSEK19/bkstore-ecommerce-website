@@ -4,7 +4,7 @@
 	require_once "mvc/utility/utility.php";
 	require_once('blocks/header_admin.php');
     for($i=0;$i<12;$i++)
-        echo '<p class="d-none" id="m'.$data["doanhthu"][$i]["MONTH(created_at)"].'">'.$data["doanhthu"][$i]["SUM(total_money)"].'<p>';
+        echo '<p class="d-none" id="m'.$data["revenue"][$i]["MONTH(created_at)"].'">'.$data["revenue"][$i]["SUM(total_money)"].'<p>';
 ?>
 
 <div class="row">

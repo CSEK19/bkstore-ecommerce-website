@@ -108,7 +108,7 @@
                 </li>
 
                 <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>bkstore@co3021.hcmut.edu.vn</p>
+                    <p>bkstore@co3027.hcmut.edu.vn</p>
                 </li>
             </ul>
         </div>

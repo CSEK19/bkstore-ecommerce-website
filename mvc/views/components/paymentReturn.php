@@ -44,7 +44,7 @@
                     } else {
                         echo "Not successful";
                     }
-                } else {
+                else {
                     echo "Invalid sign";
                 }
                 ?>
@@ -60,6 +60,6 @@
         &nbsp;
     </p>
     <footer class="footer">
-        <p>&copy; Bkstore 2022</p>
+        <p>&copy; BKStore 2023</p>
     </footer>
 </div>

@@ -4,14 +4,14 @@ class DB {
     // SQL: insert, update, delete
     function execute($sql) {
         //open connection
-        $conn = pg_connect("host=localhost port=5432 dbname=bkstore user=postgres password=local");
-	    pg_set_client_encoding($conn, "utf8");
+        $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+        mysqli_set_charset($conn, 'utf8');
 
         //query
-        pg_query($conn, $sql);
+        mysqli_query($conn, $sql);
 
         //close connection
-        pg_close($conn);
+        mysqli_close($conn);
     }
 
     // SQL: select -> lay du lieu dau ra (select danh sach ban ghi, lay 1 ban ghi)
@@ -19,22 +19,22 @@ class DB {
         $data = null;
 
         //open connection
-        $conn = pg_connect("host=localhost port=5432 dbname=bkstore user=postgres password=local");
-	    pg_set_client_encoding($conn, "utf8");
+        $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+        mysqli_set_charset($conn, 'utf8');
 
         //query
-        $resultset = pg_query($conn, $sql);
+        $resultset = mysqli_query($conn, $sql);
         if($resultset){
             if($isSingle) {
-                $data = pg_fetch_array($resultset, NULL, PGSQL_BOTH);
+                $data = mysqli_fetch_array($resultset, 1);
             } else {
                 $data = [];
-                while(($row = pg_fetch_array($resultset, NULL, PGSQL_BOTH)) != null) {
+                while(($row = mysqli_fetch_array($resultset, 1)) != null) {
                     $data[] = $row;
                 }
             }
             //close connection
-            pg_close($conn);
+            mysqli_close($conn);
         }
         return $data;
     }
