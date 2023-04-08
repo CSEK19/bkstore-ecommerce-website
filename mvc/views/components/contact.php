@@ -19,7 +19,6 @@
 
  <!-- Start Map -->
     <div id="mapid" style="margin-top:70px; width: 100%; height: 700px;"></div>
-    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script> -->
     <script>
         var mymap = L.map('mapid').setView([10.783369022465484, 106.66062197999558], 12);
         L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoid2V2Njc5MzQiLCJhIjoiY2xnN3lxNGVyMHM0ZTNjbzdpbjZvdzJ0eiJ9.E9Rh05Nz-zLYYm5j40Z8tw', {
