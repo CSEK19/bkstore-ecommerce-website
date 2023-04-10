@@ -6,7 +6,7 @@
 <?php require_once "mvc/views/blocks/onTop.php" ?>
 <div class="row" style="margin-top: 20px;">
 	<div class="col-md-12" style="margin-bottom: 20px;">
-		<h3>Product Management</h3>
+		<h3>Product Category Management</h3>
 		<p class="d-none" id="deleteSuccess"><?=$data["deleteSuccess"]?></p>
 	</div>
 	<div class="col-md-6">
