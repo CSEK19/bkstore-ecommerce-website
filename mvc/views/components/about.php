@@ -18,11 +18,9 @@
             <div class="col-lg-6 order-last order-lg-first">
                 <div class="about-text-wrap">
                     <h2>About Us</h2>
-                    <p>BK Store is a branch of BKU PhoneStore group, located in a prime location in the center of
-                        District 10, City. Ho Chi Minh. We are committed to bringing the best quality products at the
-                        most competitive prices on the market today.</p>
+                    <p>BK Store is a prime branch of the BKU Electronics Corporation, situated in the heart of District 10, Ho Chi Minh City. Our unwavering commitment is to offer top-quality products at the most competitive prices in the market.</p>
                     <br>
-                    <p>With the motto: "All for the trust of customers". We always try to give our customers the best!
+                    <p>Our motto, 'All for the trust of our customers,' reflects our commitment to delivering the best possible experience to every customer we serve.
                     </p>
                 </div>
             </div>

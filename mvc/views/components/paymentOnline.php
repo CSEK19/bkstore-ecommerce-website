@@ -70,8 +70,8 @@
                     <div class="form-group">
                         <label for="language">Language</label>
                         <select name="language" id="language" class="form-control">
-                            <option value="vn">Vietnamese</option>
                             <option value="en">English</option>
+                            <option value="vn">Vietnamese</option>
                         </select>
                     </div>
                     <!-- <button type="submit" class="btn btn-primary" id="btnPopup">Thanh toán Post</button> -->
@@ -83,6 +83,6 @@
                 &nbsp;
             </p>
             <footer class="footer">
-                <p>&copy; VNPAY <?php echo date('Y')?></p>
+                <p>Copyright &copy; VNPAY <?php echo date('Y')?></p>
             </footer>
         </div> 

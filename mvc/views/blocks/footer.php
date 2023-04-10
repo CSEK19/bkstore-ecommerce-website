@@ -12,8 +12,14 @@
                     <!-- Links -->
                     <h5>About us</h5>
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+                    <ul class="fa-ul foot-desc ml-4">
+                        <li class="mb-2"><span class="fa-li"><i class="fa fa-home"></i></span>BK Store     
+                        </li>
+                        <li class="mb-2"><span class="fa-li"><i class="fa fa-address-book"></i></span>Research & Development Team</li>
+                    </ul>
 
-                    <p class="foot-desc mb-0">CO3027</p>
+
+                    
 
 
 
@@ -84,12 +90,12 @@
                     <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
 
                     <ul class="fa-ul foot-desc ml-4">
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>HCM University of Technology     
+                        <li class="mb-2"><span class="fa-li"><i class="fa fa-map"></i></span>HCM University of Technology     
                         </li>
-                        <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>0123 456 789</li>
-                        <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>bkstore@co3027.hcmut.edu.vn
+                        <li class="mb-2"><span class="fa-li"><i class="fa fa-phone-alt"></i></span>0123 456 789</li>
+                        <li class="mb-2"><span class="fa-li"><i class="fa fa-envelope"></i></span>bkstore@phat.hcmut.edu.vn
                         </li>
-                        <li><span class="fa-li"><i class="far fa-clock"></i></span>Working 24/7</li>
+                        <li><span class="fa-li"><i class="fa fa-clock"></i></span>Working 24/7</li>
                     </ul>
 
                 </div>

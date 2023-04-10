@@ -153,7 +153,7 @@
                 &nbsp;
             </p>
             <footer class="footer">
-                <p>&copy; © HCMUT 2023</p>
+                <p>Copyright &copy; 2023 BK Store</p>
             </footer>
         </div>  
     </body>
