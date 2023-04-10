@@ -13,15 +13,16 @@
         <meta name="author" content="">
         <title>Billing Information</title>
         <!-- Bootstrap core CSS -->
-        <link href="/vnpay_php/assets/bootstrap.min.css" rel="stylesheet"/>
+        <link href="public/assets/bootstrap.min.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
-        <link href="/vnpay_php/assets/jumbotron-narrow.css" rel="stylesheet">         
-        <script src="/vnpay_php/assets/jquery-1.11.3.min.js"></script>
+        <link href="public/assets/jumbotron-narrow.css" rel="stylesheet">         
+        <script src="public/assets/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <?php
         $vnp_TmnCode = "A25KNJSA"; //Website ID in VNPAY System
         $vnp_HashSecret = "MDBXYVILBYYAIXFQIULAYRIBAKSLILWJ"; //Secret key
+
         $startTime = date("YmdHis");
         $expire = date('YmdHis',strtotime('+15 minutes',strtotime($startTime)));
         $vnp_SecureHash = $_GET['vnp_SecureHash'];
@@ -87,10 +88,12 @@
                 <div class="form-group">
                     <label >Result:</label>
                     <label>
-                        <?php
+                        <?php   
                             if ($_GET['vnp_ResponseCode'] == '00') {
                                 require_once "mvc/utility/utility.php";
+                                require_once "mvc/core/config.php";
                                 $user = getUserToken();
+                                
                                 $order_id = $_GET['vnp_TxnRef'];
                                 $vnp_SecureHash = $_GET['vnp_SecureHash'];
                                 $money = $_GET['vnp_Amount']/100;
@@ -99,12 +102,12 @@
                                 $code_vnpay = $_GET['vnp_TransactionNo'];
                                 $code_bank = $_GET['vnp_BankCode'];
                                 $time = $_GET['vnp_PayDate'];
-                                $date_time = substr($time, 0, 4) . '-' . substr($time, 4, 2) . '-' . substr($time, 6, 2) . ' ' . substr($time, 8, 2) . ' ' . substr($time, 10, 2) . ' ' . substr($time, 12, 2);
+                                $date_time = substr($time, 0, 4) . '-' . substr($time, 4, 2) . '-' . substr($time, 6, 2) . ' ' . substr($time, 8, 2) . ':' . substr($time, 10, 2) . ':' . substr($time, 12, 2);
                                 
-                                $conn = mysqli_connect('localhost', 'root', '', 'webdienthoai');
+                                $conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
                                 mysqli_set_charset($conn, 'utf8');
 
-                                $user_id=36;
+                                $user_id=55;
                                 if($_COOKIE["token"]){
                                     $token = $_COOKIE['token'];
                                     $sql = "SELECT user_id
@@ -114,11 +117,13 @@
                                     $data = mysqli_fetch_array($resultset, 1);
                                     $user_id= $data["user_id"];
                                 }
-                                
+
                                 // query
-                                $sql = "INSERT INTO payments(order_id, user_id, money, note,vnp_response_code,code_vnpay, code_bank, time) 
-                                         VALUES ('$order_id','$user_id','$money','$note','$vnp_response_code','$code_vnpay','$code_bank','$date_time')";
-                                mysqli_query($conn, $sql);
+                                $sql = "INSERT INTO payments(order_id, user_id, money, note, vnp_response_code, code_vnpay, code_bank, time) VALUES ($order_id, $user_id, $money, '$note', '$vnp_response_code', '$code_vnpay', '$code_bank', '$date_time')";
+                                $result = mysqli_query($conn, $sql);
+                                if (!$result) {
+                                    die('Error: ' . mysqli_error($conn));
+                                }
 
                                 $sql = "SELECT id
                                         FROM orders
@@ -132,13 +137,13 @@
                                 $sql = "update orders set status = 4 where id = $orderId";
                                 mysqli_query($conn, $sql);
 
-                                //close connection
+                                // close connection
                                 mysqli_close($conn);
                                 setcookie('cart', "", -60, '/');
                                 
-                                echo "Successful";
+                                echo "Transaction successful";
                             } else {
-                                echo "Something went wrong";
+                                echo "Transaction failed";
                             }
                         ?>
 
