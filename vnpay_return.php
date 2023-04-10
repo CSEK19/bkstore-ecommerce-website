@@ -20,8 +20,8 @@
     </head>
     <body>
         <?php
-        $vnp_TmnCode = "M8HTHR13"; //Website ID in VNPAY System
-        $vnp_HashSecret = "LJWGQOQSMCOBQHYJQOWTTISWHQURIMZJ"; //Secret key
+        $vnp_TmnCode = "A25KNJSA"; //Website ID in VNPAY System
+        $vnp_HashSecret = "MDBXYVILBYYAIXFQIULAYRIBAKSLILWJ"; //Secret key
         $startTime = date("YmdHis");
         $expire = date('YmdHis',strtotime('+15 minutes',strtotime($startTime)));
         $vnp_SecureHash = $_GET['vnp_SecureHash'];
@@ -45,7 +45,7 @@
             }
         }
 
-        //$secureHash = md5($vnp_HashSecret . $hashData);
+        // $secureHash = md5($vnp_HashSecret . $hashData);
 		$secureHash = hash('sha256',$vnp_HashSecret . $hashData);
         ?>
         <!--Begin display -->
@@ -115,7 +115,7 @@
                                     $user_id= $data["user_id"];
                                 }
                                 
-                                //query
+                                // query
                                 $sql = "INSERT INTO payments(order_id, user_id, money, note,vnp_response_code,code_vnpay, code_bank, time) 
                                          VALUES ('$order_id','$user_id','$money','$note','$vnp_response_code','$code_vnpay','$code_bank','$date_time')";
                                 mysqli_query($conn, $sql);

@@ -52,8 +52,8 @@ class PaymentOnline extends Controller{
         $vnp_IpAddr = $_SERVER['REMOTE_ADDR'];
         $vnp_Returnurl = "http://localhost/bkstore/vnpay_return.php";
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-        $vnp_TmnCode = "M8HTHR13"; //Website ID in VNPAY System
-        $vnp_HashSecret = "LJWGQOQSMCOBQHYJQOWTTISWHQURIMZJ"; //Secret key
+        $vnp_TmnCode = "A25KNJSA"; //Website ID in VNPAY System
+        $vnp_HashSecret = "MDBXYVILBYYAIXFQIULAYRIBAKSLILWJ"; //Secret key
 
         $inputData = array(
             "vnp_Version" => "2.1.0",
