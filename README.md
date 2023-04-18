@@ -1,4 +1,5 @@
- # hcmut-co3027
+ # BK Store
+This is an e-commerce website built on the MVC pattern.
 
 # Getting Started
 - Clone this repo.
