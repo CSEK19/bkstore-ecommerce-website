@@ -1,5 +1,6 @@
  # BK Store
 This is an e-commerce website built on the MVC pattern.
+Demo: [Youtube]([https://www.google.com](https://www.youtube.com/watch?v=OkxyDmgvprQ).
 
 # Getting Started
 - Clone this repo.
